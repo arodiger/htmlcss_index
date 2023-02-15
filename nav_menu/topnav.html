@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0;}
+
+@import url(
+"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 1;
+    padding: 1;
+    /* font-family: sans-serif; */
+	font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    line-height: 1em;
+}
+
+html, body{
+    /* height: 100vh; */
+    /* height: 100%; */
+    /* background-color: dodgerblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;              /* fixed top nav bar */
+  top: 0;                       /* fixed top nav bar */
+  width: 100%;                  /* fixed top nav bar */
+  /* background-color: #f3f3f3; */
+  background-color: white;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  height: 60px;
+}
+
+ul.topnav li {
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+ul.topnav li a {
+  display: block;
+  /* color: #667;   */
+  color:rgb(87, 87, 87);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* when any a tag is hovered that doesn't have active class it should run that code */
+ul.topnav li a:hover:not(.active) {
+  /* transform: scale(1.20); */
+  color: #2c2c2c;
+  font-weight: 500;
+  
+  transform: perspective(500px) translateZ(100px);
+
+  /* transition: transform 0.s; */
+  transition: transform 0.3s ease;
+}
+
+ul.topnav li a.active {
+    font-weight: 600;
+    /* background-color: #04AA6D; */
+}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {
+    float: none;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+
+}
+}
+
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+  <!-- <li><a class="active" href="#home">Home</a></li> -->
+  <li><a href="#home">HOME</a></li>
+  <li><a href="#news">NEWS</a></li>
+  <li><a href="#contact">CONTACT</a></li>
+  <li class="right"><a href="#about">ANTHONYRODIGER.COM</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+  <h2>Responsive Topnav Example</h2>
+  <p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+  <h4>Resize the browser window to see the effect.</h4>
+</div>
+
+</body>
+</html>
+
+
